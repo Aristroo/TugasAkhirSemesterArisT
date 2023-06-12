@@ -2,6 +2,7 @@
     <string name="app_name">TugasAkhirSemesterArisT</string>
 
     <string-array name="Pilih_array">
+        <item>PILIH SALAH SATU :</item>
         <item>Jelajahi</item>
         <item>Hubungi</item>
         <item>Baca Data</item>

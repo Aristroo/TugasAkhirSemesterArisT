@@ -3,16 +3,12 @@ package com.example.tugasakhirsemesterarist;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.Toast;
+
 
 public class OK extends AppCompatActivity {
 
@@ -32,14 +28,33 @@ public class OK extends AppCompatActivity {
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getApplicationContext(), adapter.getItem(position), Toast.LENGTH_SHORT).show();
+                String selectedItem = parent.getItemAtPosition(position).toString();
+
+                if (selectedItem.equals("Jelajahi")) {
+                    Intent intent = new Intent(OK.this, Jelajahi.class);
+                    startActivity(intent);
+                }
+
+                else if (selectedItem.equals("Hubungi")) {
+                    Intent intent = new Intent(OK.this, MainHubungi.class);
+                    startActivity(intent);
+                }
+
+                else if (selectedItem.equals("Baca Data")) {
+                    Intent intent = new Intent(OK.this, Jelajahi.class);
+                    startActivity(intent);
+                }
+
+                else if (selectedItem.equals("Cek Posisi")) {
+                    Intent intent = new Intent(OK.this, Jelajahi.class);
+                    startActivity(intent);
+                }
+
             }
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
-
             }
         });
-
     }
 }
