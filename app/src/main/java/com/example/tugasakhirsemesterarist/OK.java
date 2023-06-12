@@ -41,12 +41,12 @@ public class OK extends AppCompatActivity {
                 }
 
                 else if (selectedItem.equals("Baca Data")) {
-                    Intent intent = new Intent(OK.this, Jelajahi.class);
+                    Intent intent = new Intent(OK.this, BacaData.class);
                     startActivity(intent);
                 }
 
                 else if (selectedItem.equals("Cek Posisi")) {
-                    Intent intent = new Intent(OK.this, Jelajahi.class);
+                    Intent intent = new Intent(OK.this, MainGPS.class);
                     startActivity(intent);
                 }
 

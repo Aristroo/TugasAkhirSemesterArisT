@@ -13,7 +13,8 @@
         android:id="@+id/textAkhirSemester"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Project Akhir Semester"
+        android:text="Ulangan Akhir Semester"
+        android:layout_gravity="center"
         android:layout_marginTop="100dp"
         android:layout_centerHorizontal="true"
         android:textSize="30sp"
@@ -24,14 +25,34 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/textPilih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textAkhirSemester"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:text="Kirim SMS Sekarang"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        tools:ignore="TextSizeCheck" />
+
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/black"
         android:onClick="klik2"
-        android:text="SMS" />
+        android:text="OK" />
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/kisspng_email_computer_icons_webmail_smtp_authentication_school_5abb35e9d75895_2925419215222184738821" />
 
 
 </LinearLayout>

@@ -8,11 +8,13 @@
     android:background="#C0C0C0"
     tools:context=".MainActivity">
 
+
+
     <TextView
         android:id="@+id/textAkhirSemester"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Project Akhir Semester"
+        android:text="Ulangan Akhir Semester"
         android:layout_marginTop="100dp"
         android:layout_centerHorizontal="true"
         android:textSize="30sp"
@@ -30,15 +32,20 @@
         android:layout_below="@+id/textAkhirSemester"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
         android:padding="5dp"
-        android:text="Pilih Salah Satu"
+        android:text="Pilih"
         android:textColor="@color/black"
+        android:textStyle="bold"
         android:textSize="15dp"
         tools:ignore="TextSizeCheck" />
+
 
     <Spinner
         android:id="@+id/spinnerOk"
         android:layout_width="match_parent"
+        android:gravity="center"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textPilih"
         android:layout_marginStart="170dp"
@@ -51,15 +58,15 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="409dp"
-        android:layout_height="493dp"
+        android:layout_width="407dp"
+        android:layout_height="462dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="238dp"
-        android:layout_marginEnd="-3dp"
+        android:layout_marginTop="269dp"
+        android:layout_marginEnd="0dp"
         android:layout_marginBottom="0dp"
         app:srcCompat="@drawable/pngtreecalligraphy_pen_5410876" />
 

@@ -12,7 +12,7 @@
         android:id="@+id/textAkhirSemester"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Project Akhir Semester"
+        android:text="Ulangan Akhir Semester"
         android:layout_marginTop="100dp"
         android:layout_centerHorizontal="true"
         android:textSize="30sp"
